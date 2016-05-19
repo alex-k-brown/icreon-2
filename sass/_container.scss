@@ -1,0 +1,62 @@
+/*---------- CONTAINER STYLES ----------*/
+
+.container {
+	background: white;
+	border-radius: 10px;
+	width: 50%;
+	height: 600px;
+	margin: 20px auto;
+	padding: 75px 0 0;
+
+	.title {
+		padding: 0 0 0 10%;
+		border-left: 6px solid #ed2553;
+		width: 40%;
+		float: left;
+
+	}/*title*/
+
+	.add {
+		background: #ed2553;
+		color: white;
+		font-size: 4rem;
+		border-radius: 100%;
+		width: 200px;
+		height: 135px;
+		text-align: center;
+		padding: 65px 0 0;
+		float: right;
+		margin: -25px -100px 0 0;
+
+	}/*add*/
+
+	.login {
+		float: none;
+		margin: 200px auto 0;
+		width: 80%;
+
+		input {
+			display: block;
+			border: none;
+			border-bottom: 2px solid #dfdfdf;
+			width: 100%;
+			font-size: 2rem;
+			margin: 50px 0 0;
+
+		}/*input*/
+
+		.button {
+			border: 2px solid #dfdfdf;
+			width: 75%;
+			margin: 50px auto;
+
+		}/*button*/
+	}/*login*/
+
+	.forgot {
+		color: #dfdfdf;
+		text-align: center;
+		font-size: 2rem;
+
+	}/*forgot*/
+}/*container*/

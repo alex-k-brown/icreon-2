@@ -128,3 +128,102 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/*---------- GENERAL STYLES ---------*/
+/* line 3, ../sass/_general.scss */
+html {
+  font-size: 16px;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+/*html*/
+/* line 11, ../sass/_general.scss */
+body {
+  background: #5cf0d6;
+}
+
+/*body*/
+/* line 16, ../sass/_general.scss */
+.button {
+  background: none;
+  border: 2px solid #dfdfdf;
+  color: #dfdfdf;
+  padding: 20px 0;
+}
+
+/*button*/
+/*---------- CONTAINER STYLES ----------*/
+/* line 3, ../sass/_container.scss */
+.container {
+  background: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 600px;
+  margin: 20px auto;
+  padding: 75px 0 0;
+  /*title*/
+  /*add*/
+  /*login*/
+  /*forgot*/
+}
+/* line 11, ../sass/_container.scss */
+.container .title {
+  padding: 0 0 0 10%;
+  border-left: 6px solid #ed2553;
+  width: 40%;
+  float: left;
+}
+/* line 19, ../sass/_container.scss */
+.container .add {
+  background: #ed2553;
+  color: white;
+  font-size: 4rem;
+  border-radius: 100%;
+  width: 200px;
+  height: 135px;
+  text-align: center;
+  padding: 65px 0 0;
+  float: right;
+  margin: -25px -100px 0 0;
+}
+/* line 33, ../sass/_container.scss */
+.container .login {
+  float: none;
+  margin: 200px auto 0;
+  width: 80%;
+  /*input*/
+  /*button*/
+}
+/* line 38, ../sass/_container.scss */
+.container .login input {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+  width: 100%;
+  font-size: 2rem;
+  margin: 50px 0 0;
+}
+/* line 48, ../sass/_container.scss */
+.container .login .button {
+  border: 2px solid #dfdfdf;
+  width: 75%;
+  margin: 50px auto;
+}
+/* line 56, ../sass/_container.scss */
+.container .forgot {
+  color: #dfdfdf;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*container*/
+/* line 1, ../sass/_text.scss */
+h1 {
+  color: #ed2553;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/*h1*/
