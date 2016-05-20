@@ -137,15 +137,30 @@ html {
   box-sizing: border-box;
   font-family: "Helvetica", sans-serif;
 }
-
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
 /*html*/
-/* line 11, ../sass/_general.scss */
+/* line 15, ../sass/_general.scss */
 body {
   background: #5cf0d6;
 }
 
 /*body*/
-/* line 16, ../sass/_general.scss */
+/* line 20, ../sass/_general.scss */
 .button {
   background: none;
   border: 2px solid #dfdfdf;
@@ -165,6 +180,7 @@ body {
   padding: 75px 0 0;
   /*title*/
   /*add*/
+  /*plus*/
   /*login*/
   /*forgot*/
 }
@@ -182,13 +198,20 @@ body {
   font-size: 4rem;
   border-radius: 100%;
   width: 200px;
-  height: 135px;
+  height: 205px;
   text-align: center;
-  padding: 65px 0 0;
   float: right;
-  margin: -25px -100px 0 0;
+  position: relative;
+  left: 20%;
+  top: -10px;
 }
-/* line 33, ../sass/_container.scss */
+/* line 34, ../sass/_container.scss */
+.container .plus {
+  position: absolute;
+  left: 40%;
+  top: 65px;
+}
+/* line 40, ../sass/_container.scss */
 .container .login {
   float: none;
   margin: 200px auto 0;
@@ -196,7 +219,7 @@ body {
   /*input*/
   /*button*/
 }
-/* line 38, ../sass/_container.scss */
+/* line 45, ../sass/_container.scss */
 .container .login input {
   display: block;
   border: none;
@@ -205,13 +228,13 @@ body {
   font-size: 2rem;
   margin: 50px 0 0;
 }
-/* line 48, ../sass/_container.scss */
+/* line 55, ../sass/_container.scss */
 .container .login .button {
   border: 2px solid #dfdfdf;
   width: 75%;
   margin: 50px auto;
 }
-/* line 56, ../sass/_container.scss */
+/* line 63, ../sass/_container.scss */
 .container .forgot {
   color: #dfdfdf;
   text-align: center;

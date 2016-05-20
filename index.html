@@ -12,7 +12,9 @@
 
 <div class="container">
 	<h1 class="title">Login</h1>
-	<div class="add">+</div>
+	<div id="add" class="add">
+		<p id="plus" class="plus">+</p>
+	</div><!--add-->
 	<form class="login">
 		<input class="username" type="text" name="username" placeholder="Username">
 		<input class="password" type="text" name="password" placeholder="Password">
@@ -24,6 +26,36 @@
 <!-- Add jQuery -->
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+<script>
+	
+$(document).ready(function() {
+	$('#add').click(function() {
+		console.log('Add Clicked');
+		//$(this).animate({top: '+=100px', left: '-=10%'}, 50);
+		$(this).animate({height: '5000px', width: '5000px', top: '-=2550px', left: '+=2300px' }, 2000);
+
+		$('#plus').animate({top: '2465px', left: '2465px'}, 2000);
+
+		setTimeout(function () {
+			$('.container').css('overflow', 'hidden');
+		}, 100);
+
+		$('#plus').css('-webkit-animation', 'spin .5s linear');
+			$('#plus').css('-moz-animation', 'spin .5s linear');
+			$('#plus').css('animation', 'spin .5s linear' )
+
+		setTimeout(function() {
+			$('#plus').css('-ms-transform', 'rotate(45deg)');
+    		$('#plus').css('-webkit-transform', 'rotate(45deg)'); 
+    		$('#plus').css('transform', 'rotate(45deg)');
+			
+		}, 450);
+	});
+
+});
+
+</script>
 
 </body>
 </html>

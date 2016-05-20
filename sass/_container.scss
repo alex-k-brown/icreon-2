@@ -22,13 +22,20 @@
 		font-size: 4rem;
 		border-radius: 100%;
 		width: 200px;
-		height: 135px;
+		height: 205px;
 		text-align: center;
-		padding: 65px 0 0;
 		float: right;
-		margin: -25px -100px 0 0;
+		position: relative;
+		left: 20%;
+		top: -10px;
 
 	}/*add*/
+
+	.plus {
+		position: absolute;
+		left: 40%;
+		top: 65px;
+	}/*plus*/
 
 	.login {
 		float: none;
