@@ -2,11 +2,14 @@
 
 .container {
 	background: white;
-	border-radius: 10px;
-	width: 50%;
-	height: 600px;
+	border-radius: 5px;
+	width: 350px;
+	height: 400px;
 	margin: 20px auto;
 	padding: 75px 0 0;
+	position: relative;
+	top: -85px;
+	z-index: 2000;
 
 	.title {
 		padding: 0 0 0 10%;
@@ -16,30 +19,9 @@
 
 	}/*title*/
 
-	.add {
-		background: #ed2553;
-		color: white;
-		font-size: 4rem;
-		border-radius: 100%;
-		width: 200px;
-		height: 205px;
-		text-align: center;
-		float: right;
-		position: relative;
-		left: 20%;
-		top: -10px;
-
-	}/*add*/
-
-	.plus {
-		position: absolute;
-		left: 40%;
-		top: 65px;
-	}/*plus*/
-
 	.login {
 		float: none;
-		margin: 200px auto 0;
+		margin: 100px auto 0;
 		width: 80%;
 
 		input {
@@ -47,7 +29,7 @@
 			border: none;
 			border-bottom: 2px solid #dfdfdf;
 			width: 100%;
-			font-size: 2rem;
+			font-size: 1.25rem;
 			margin: 50px 0 0;
 
 		}/*input*/
@@ -55,7 +37,7 @@
 		.button {
 			border: 2px solid #dfdfdf;
 			width: 75%;
-			margin: 50px auto;
+			margin: 35px auto;
 
 		}/*button*/
 	}/*login*/
@@ -63,7 +45,7 @@
 	.forgot {
 		color: #dfdfdf;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.25rem;
 
 	}/*forgot*/
 }/*container*/

@@ -9,12 +9,10 @@
 
 </head>
 <body>
-
+<div class="container-back"></div>
 <div class="container">
 	<h1 class="title">Login</h1>
-	<div id="add" class="add">
-		<p id="plus" class="plus">+</p>
-	</div><!--add-->
+	
 	<form class="login">
 		<input class="username" type="text" name="username" placeholder="Username">
 		<input class="password" type="text" name="password" placeholder="Password">
@@ -22,24 +20,55 @@
 	</form><!--login-->
 	<p class="forgot">Forgot your password?</p>
 </div><!--container-->
+<div class="container-top">
+	<div id="add" class="add">
+		<p id="plus" class="plus">+</p>
+	</div><!--add-->
+	<h1 id="title-top" class="title">Register</h1>
+	
+	<form  id="sign-up" class="login">
+		<input class="username login-stagger" type="text" name="username" placeholder="Username">
+		<input class="password login-stagger" type="text" name="password" placeholder="Password">
+		<input class="repeat-password login-stagger" type="text" name="repeat-password" placeholder="Repeat Password">
+		<input class="button login-stagger" type="submit" value="Next">
+	</form><!--login-->
+</div><!--container-top-->
+
 
 <!-- Add jQuery -->
 
 <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+
+<!--Add TweenMax (GreenSock) -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
 
 <script>
 	
 $(document).ready(function() {
 	$('#add').click(function() {
 		console.log('Add Clicked');
+		
 		//$(this).animate({top: '+=100px', left: '-=10%'}, 50);
-		$(this).animate({height: '5000px', width: '5000px', top: '-=2550px', left: '+=2300px' }, 2000);
+		TweenMax.to($(this), .6, {height: '1000px', width: '1000px', top: -350, left: '+=375px' });
 
-		$('#plus').animate({top: '2465px', left: '2465px'}, 2000);
+		TweenMax.to('#plus', .6, {top: '285px', left: '500px'});
 
-		setTimeout(function () {
-			$('.container').css('overflow', 'hidden');
-		}, 100);
+		TweenMax.to('.container', .6, {width: 340, top: -90});
+
+		TweenMax.to('.container-back', .6, {width: 330, top: 20});
+
+
+		setTimeout(function() {
+			$('.container-top').css('overflow', 'hidden');
+		}, 50)
+
+		setTimeout(function() {
+			$('#sign-up').css('display', 'block');
+			$('#title-top').css('display', 'block');
+			TweenMax.staggerFrom('.login-stagger', .5, {left: 25}, .05);
+		}, 550);
+			
 
 		$('#plus').css('-webkit-animation', 'spin .5s linear');
 			$('#plus').css('-moz-animation', 'spin .5s linear');
